@@ -1,5 +1,5 @@
 from flask import Flask, jsonify
-from config import Config
+from app.config import Config
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 
@@ -9,9 +9,9 @@ db = SQLAlchemy(app)
 migrate = Migrate(app, db)
 
 # from . import models
-from .models import *
+from .models import vegetables
 # from . import views
-from .views import new_routes, routes
+from .views import new_routes, routes, vegetables
 from app import routes
 
 # from . import routes, models.vegetables

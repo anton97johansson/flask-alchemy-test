@@ -8,3 +8,4 @@ class Vegetables(db.Model):
 
     def __repr__(self):
         return '<Vegetables {}>'.format(self.name)
+
